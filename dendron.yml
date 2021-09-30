@@ -32,7 +32,7 @@ scratch:
 site:
     copyAssets: true
     siteHierarchies:
-        - root
+        - hi
     siteRootDir: docs
     siteUrl: 'https://harshita-mindfire.github.io'
     usePrettyRefs: true
