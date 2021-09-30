@@ -32,7 +32,7 @@ scratch:
 site:
     copyAssets: true
     siteHierarchies:
-        - travel
+        - travel.pictures
     siteRootDir: docs
     siteUrl: 'https://harshita-mindfire.github.io'
     usePrettyRefs: true
