@@ -1,0 +1,421 @@
+{
+  "notes": {
+    "403": {
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "403",
+      "updated": 1633027343987,
+      "created": 1633027343988,
+      "parent": null,
+      "children": [],
+      "body": "[Dendron](https://dendron.so/) (the tool used to generate this site) lets authors selective publish content. You will see this page whenever you click on a link to an unpublished page\n\n![](https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/not-sprouted.png)",
+      "data": {}
+    },
+    "IFifvzusMKPFkknz": {
+      "id": "IFifvzusMKPFkknz",
+      "title": "Root",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "welcome-to-dendron": {
+          "type": "header",
+          "value": "welcome-to-dendron",
+          "line": 7,
+          "column": 0
+        }
+      },
+      "fname": "root",
+      "updated": 1627190883519,
+      "created": 1627190883519,
+      "parent": null,
+      "children": [
+        "XHzNngaH5WTtoWaM"
+      ],
+      "data": {},
+      "contentHash": "21e66407bef8c6a5beb80d129cd6453b",
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. \n"
+    },
+    "XHzNngaH5WTtoWaM": {
+      "id": "XHzNngaH5WTtoWaM",
+      "title": "Hi",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "hi.journal.shree-ganesh",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 9,
+              "column": 1,
+              "offset": 999
+            },
+            "end": {
+              "line": 9,
+              "column": 17,
+              "offset": 1015
+            },
+            "indent": []
+          },
+          "value": "hi"
+        }
+      ],
+      "anchors": {
+        "contacts": {
+          "type": "header",
+          "value": "contacts",
+          "line": 15,
+          "column": 0
+        }
+      },
+      "fname": "hi",
+      "updated": 1633022693368,
+      "created": 1627191472424,
+      "parent": "IFifvzusMKPFkknz",
+      "children": [
+        "hSp66AcPKB1JdBu42lN1f",
+        "A9trcyA2yh3svOAjQw1Z9"
+      ],
+      "data": {},
+      "contentHash": "68bd3be28f46e783f719f0aa92723a6a",
+      "custom": {},
+      "body": "\nHi,\nWelcome to Harshita's Digital Garden 🌱\nI'm Harshita. I'm a software engineer who also has a passion for teaching. I am constantly adding checks in my checklist to acheive erything I have aimed for, one at a time. Today maybe I'll mark a ✅ for starting a personal blog.\n![](/assets/images/2021-07-25-13-14-18.png)\n\nWhen not at the computer, I play ukulele,  do yoga, study [German](https://harshita-mindfire.github.io/german-for-beginners/), sing the worst cover of `Shallow` by Lady Gaga and wonder about having numerous pets.\n\n## Contacts\nYou can find and contact me in the following places\n\nEmail: tharshita13@gmail.com\n\nInstagram: [imharshita07](https://www.instagram.com/imharshita07/)\n\nLinkedIn: [Harshita Joshi](https://www.linkedin.com/in/harshita-joshi-030b29118/)\n\nGithub: I know it is strange to have two github accounts but here they are:\n- [Harshita-mindfire](https://github.com/Harshita-mindfire)\n- [Hj2207](https://github.com/Hj2207)\n\n"
+    },
+    "A9trcyA2yh3svOAjQw1Z9": {
+      "id": "A9trcyA2yh3svOAjQw1Z9",
+      "title": "Learnings",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "hi.learnings",
+      "updated": 1633024390033,
+      "created": 1633024390033,
+      "parent": "XHzNngaH5WTtoWaM",
+      "children": [
+        "Emni5cJcdFfT8SHb6Z1jA",
+        "y0EPDmDOTZpC9TooOlWrC",
+        "h5VPUrfE05MUVf6tiA4DC"
+      ],
+      "data": {},
+      "contentHash": "e1fe22be31ff1a8d4e3ebb60fbfdcb63",
+      "stub": false,
+      "custom": {
+        "stub": true
+      },
+      "body": "\n"
+    },
+    "h5VPUrfE05MUVf6tiA4DC": {
+      "id": "h5VPUrfE05MUVf6tiA4DC",
+      "title": "Prompts for CLI",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "hi.learnings.prompts-for-cli",
+      "updated": 1627977269959,
+      "created": 1627977037534,
+      "parent": "A9trcyA2yh3svOAjQw1Z9",
+      "children": [],
+      "data": {},
+      "contentHash": "39a99c630bafb111e46f2f0189000865",
+      "custom": {},
+      "body": "\n- Used [prompts](https://www.npmjs.com/package/prompts) for adding prompts for cli \n\n```ts\nconst resp = await prompts({\n          type: 'text',\n          name: 'title',\n          message: 'Do you want to overwrite: Yes/No',\n          validate: title => [\"yes\", \"no\"].includes(title.toLowerCase())  ? true : `Enter either Yes or No` \n        });\nconsole.log(resp.title)\n```\n\n"
+    },
+    "y0EPDmDOTZpC9TooOlWrC": {
+      "id": "y0EPDmDOTZpC9TooOlWrC",
+      "title": "GitHub Graphql API",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "cursor-and-pagination": {
+          "type": "header",
+          "value": "cursor-and-pagination",
+          "line": 118,
+          "column": 0
+        },
+        "mutation": {
+          "type": "header",
+          "value": "mutation",
+          "line": 144,
+          "column": 0
+        }
+      },
+      "fname": "hi.learnings.github-graphql-api",
+      "updated": 1627977193749,
+      "created": 1627976624538,
+      "parent": "A9trcyA2yh3svOAjQw1Z9",
+      "children": [],
+      "data": {},
+      "contentHash": "5727e93b90407d0cff0a7d09b46d694e",
+      "custom": {},
+      "body": "\nIn my initial days, I had a hard time figuring out these queries while I was working on a task. I had used [octokit](https://www.npmjs.com/package/@octokit/graphql) for making the request.\n\n\n\n*Graphql queries*\n\n- Total issue count:\n\n```graphql\nquery { \n  repository(owner:\"dendronhq\", name:\"dendron\") { \n    issues {\n      totalCount\n    }\n  }\n}\n```\n\n- Open and closed issue count\n```graphql\nquery { \n  repository(owner:\"dendronhq\", name:\"dendron\") { \n    open: issues(states:OPEN) {\n      totalCount\n    }\n    closed: issues(states:CLOSED) {\n      totalCount\n    }\n  }\n}\n```\n\nResult \n```json\n{\n  \"data\": {\n    \"repository\": {\n      \"open\": {\n        \"totalCount\": 271\n      },\n      \"closed\": {\n        \"totalCount\": 448\n      }\n    }\n  }\n}\n```\n\n- quering repository\n\n```graphql\n\nquery { \n  repository(owner:\"dendronhq\", name:\"dendron\") { \n    issues(last:100,states:OPEN) {\n       edges {\n        node {\n          title\n          url\n          number\n          state\n          labels(first:5) {\n            edges {\n              node {\n                name\n              }\n            }\n          }\n          body\n        }\n      }\n    }\n  }\n}\n```\n\n- search query let you search between a datetime\n\n```graphql\n{\n  search(query: \"repo:dendronhq/dendron is:issue is:open created:2021-06-28..2021-06-30\", type: ISSUE, last: 100) {\n    edges {\n      node {\n        ... on Issue {\n        title\n          url\n          createdAt\n          number\n          state\n         \n        }\n      }\n    }\n  }\n}\n```\n- search query to get issue count\n\n```graphql\n{\n  search(query: \"repo:dendronhq/dendron is:issue is:open created:2021-06-28..2021-06-30\", type: ISSUE, last: 100) {\n    issueCount\n  }\n}\n```\n\n\n\n \n\n  ## Cursor and pagination\n```graphql\n {\n  search(query: \"repo:dendronhq/dendron is:issue is:open created:2021-06-28..2021-06-30\", type: ISSUE, first:100, after: [end_cursor_val] ) {\n    pageInfo {\n      startCursor\n      hasNextPage\n      endCursor\n    }\n    edges {\n      cursor\n      node {\n        ... on Issue {\n        title\n          url\n          createdAt\n          number\n          state\n         \n        }\n      }\n    }\n  }\n}\n```\n\n## Mutation\n\n- Query all the labels of dendron:\n\n```graphql\nquery { \n  repository(owner:\"dendronhq\", name:\"dendron\") { \n    labels(last: 100) {\n      edges{\n        node {\n          id\n          name\n        }\n      }\n    }\n}\n}\n```\n\n\n- to update state of an issue\n```graphql\nmutation{\n  updateIssue(input: {id : \"MDU6SXNzdWU5NTI4MjU3NzY=\" , state: OPEN}){\n    issue {\n          number\n        }\n  }\n}\n```\n\n- with label ids:\n```graphql\nmutation{\n  updateIssue(input: {id : \"MDU6SXNzdWU5NTI4MjU3NzY=\" , state: OPEN, labelIds: \"MDU6TGFiZWwzMDg4MjQzMDM3\" }){\n    issue {\n          number,\n      labels(first:2)  {\n        edges {\n        node {\n          id\n          name\n        }\n        }\n      }\n        }\n  }\n}\n```\n\n- updating multiple labels : \n\n```graphql\nmutation{\n  updateIssue(input: {id : \"MDU6SXNzdWU5NTI4ODE2Nzc\" , state: CLOSED, labelIds: [\"MDU6TGFiZWwzMjAxNTExMTMw\", \"MDU6TGFiZWwxOTY1MzE3NzI1\", \"MDU6TGFiZWwxOTY1MzE3NzI0\"]}){\n    issue {\n          number,\n      labels(first:4)  {\n        edges {\n        node {\n          id\n          name\n        }\n        }\n      }\n        }\n  }\n}\n```\n\n\n"
+    },
+    "Emni5cJcdFfT8SHb6Z1jA": {
+      "id": "Emni5cJcdFfT8SHb6Z1jA",
+      "title": "Ds",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "hi.learnings.ds",
+      "updated": 1633024390038,
+      "created": 1633024390038,
+      "parent": "A9trcyA2yh3svOAjQw1Z9",
+      "children": [
+        "mZ4d7lYDaMGWwd84azIZG"
+      ],
+      "data": {},
+      "contentHash": "51d3cb5f7006798699714989146f2f70",
+      "stub": false,
+      "custom": {
+        "stub": true
+      },
+      "body": "\n"
+    },
+    "mZ4d7lYDaMGWwd84azIZG": {
+      "id": "mZ4d7lYDaMGWwd84azIZG",
+      "title": "Inplace Operations",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "two-pointer-technique": {
+          "type": "header",
+          "value": "two-pointer-technique",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "hi.learnings.ds.inplace-operations",
+      "updated": 1628747092778,
+      "created": 1628745034586,
+      "parent": "Emni5cJcdFfT8SHb6Z1jA",
+      "children": [],
+      "data": {},
+      "contentHash": "e0b71189e9e2c517b19fa54add7590b6",
+      "custom": {},
+      "body": "\n## Two pointer technique\n\nImplementing this requires the use of the two-pointer technique. This is where we iterate over the Array in two different places at the same time.\n\n- Read all the elements like we did before, to identify the duplicates. We call this our readPointer.\n- Keep track of the next position in the front to write the next unique element we've found. We call this our writePointer.\n\nExample: In the below example _idx is the second pointer_\n\n1. [Remove Element](https://leetcode.com/explore/learn/card/fun-with-arrays/526/deleting-items-from-an-array/3247/)\n\nAll two pointer [questions](https://leetcode.com/tag/two-pointers/)"
+    },
+    "hSp66AcPKB1JdBu42lN1f": {
+      "id": "hSp66AcPKB1JdBu42lN1f",
+      "title": "Journal",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "hi.journal",
+      "updated": 1633024390024,
+      "created": 1633024390024,
+      "parent": "XHzNngaH5WTtoWaM",
+      "children": [
+        "QdhaAenCeFjvwjUa",
+        "aEqCWtAWZp5IT1ka"
+      ],
+      "data": {},
+      "contentHash": "47c4e25c460b26f1ec2a98838716a072",
+      "stub": false,
+      "custom": {
+        "stub": true
+      },
+      "body": "\n"
+    },
+    "aEqCWtAWZp5IT1ka": {
+      "id": "aEqCWtAWZp5IT1ka",
+      "title": "Shree Ganesh",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "ref",
+          "from": {
+            "fname": "hi.journal.shree-ganesh",
+            "id": "aEqCWtAWZp5IT1ka",
+            "vaultName": "vault"
+          },
+          "value": "hi",
+          "position": {
+            "start": {
+              "line": 9,
+              "column": 1,
+              "offset": 999
+            },
+            "end": {
+              "line": 9,
+              "column": 17,
+              "offset": 1015
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "hi",
+            "anchorHeader": "contacts"
+          }
+        }
+      ],
+      "anchors": {},
+      "fname": "hi.journal.shree-ganesh",
+      "updated": 1627975867854,
+      "created": 1627195146014,
+      "parent": "hSp66AcPKB1JdBu42lN1f",
+      "children": [],
+      "data": {},
+      "contentHash": "a90cf317b645643076c6dda332fa1828",
+      "custom": {},
+      "body": "I have tried multiple times to keep track of journals, but have failed miserably. The main culprit behind this is my habit of damaging mobile phones before their due date. Writing notes on my cell phone is probably the easiest way to keep track of notes but when you loose them and do not have a backup, you loose much. Now that I work for [Dendron](https://www.dendron.so/) which is specially designed for notetaking,  I thought of dogfeeding and explore its features. So if this is the first journal that you are reading, then Welcome: We have just `Shri Ganesh'ed` my journal. \n\n![](/assets/images/2021-07-25-12-25-06.png)\n\nThis is me - Harshita Joshi, born and brought up in India, working as a Software Engineer and planning to do my Masters in Computer Science. \n\nAlso for those of you wondering what shree ganesh is, it means to commence or inaugurate.\nThe reason behind calling inaugration as `Shree Ganesh` will make it a journal of itself. I might publish it someday, Till then tune in :)\n![[hi#contacts]]\n"
+    },
+    "QdhaAenCeFjvwjUa": {
+      "id": "QdhaAenCeFjvwjUa",
+      "title": "Meaning of Life",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "hi.journal.meaning-of-life",
+      "updated": 1627976593464,
+      "created": 1627199180178,
+      "parent": "hSp66AcPKB1JdBu42lN1f",
+      "children": [],
+      "data": {},
+      "contentHash": "14cad83f997cb24b0afe3cffe3286e00",
+      "custom": {},
+      "body": "\n_“If you’re sailing across the ocean and your goal is to avoid weather and waves, then why the hell are you sailing?” he says. “You have to embrace that sailing means that you can’t control the elements and that there will be good days and bad days and that, whatever comes, you will deal with it”_\n\n![](/assets/images/2021-07-25-13-15-00.png)\n\nWe all have certain goals for ourselves which we want to achieve, some are long terms and some are short terms. If you have raised flags in all the mountains you wished for few years ago and instead of pating your back, you feel upset because somebody else have scaled a higher mountain than you in the same hour then my friend you are not alone and certainly need to write your script of life again. \n\nFrom my perspective, the job of a software engineer is very demanding. It exhausts your logic and maths to the core if you do not know how to take a break and if you won't keep yourself away from the money trap . This follows in almost every profession. I for myself, currently have most of the things I wished for as a freshman in the college but somehow I ended up by being upset about achieving less. Once while meditating I thought of re-writing the script of my life. I needed an anchor to look forward to.\n\nI have a personal template which I keep for myself to write my script which mainly includes 2 sections\n\n-  What I am today\n- What I want to be tomorrow\n\nThis covers the teeny tiny details of my current lifestyle and how I would want to improve it. I recently wrote my new script and seems like I am now a 6 am club member who reads a bit everyday. I thought of treating myself with love and obviously good food( I would have chose travelling but covid 19 has washed all my memories of it. Yikes!)\n\nTo have small goals for each day adds a sense of purpose and gives an aura of achievement every night when you end your day.\nI hope you keep your mental health sane and physical health strong for the coming years since we are in a pandemic and who knows what is for the next!!\n\n_Prost!_"
+    },
+    "changelog": {
+      "id": "changelog",
+      "title": "Changelog",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "root.changelog",
+      "updated": 1633027343988,
+      "created": 1633027343988,
+      "parent": null,
+      "children": [],
+      "body": "",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "IFifvzusMKPFkknz",
+      "title": "Root",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "welcome-to-dendron": {
+          "type": "header",
+          "value": "welcome-to-dendron",
+          "line": 7,
+          "column": 0
+        }
+      },
+      "fname": "root",
+      "updated": 1627190883519,
+      "created": 1627190883519,
+      "parent": null,
+      "children": [
+        "XHzNngaH5WTtoWaM"
+      ],
+      "data": {},
+      "contentHash": "21e66407bef8c6a5beb80d129cd6453b",
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. \n"
+    }
+  ],
+  "noteIndex": {
+    "id": "IFifvzusMKPFkknz",
+    "title": "Root",
+    "vault": {
+      "fsPath": "vault"
+    },
+    "type": "note",
+    "desc": "",
+    "links": [],
+    "anchors": {
+      "welcome-to-dendron": {
+        "type": "header",
+        "value": "welcome-to-dendron",
+        "line": 7,
+        "column": 0
+      }
+    },
+    "fname": "root",
+    "updated": 1627190883519,
+    "created": 1627190883519,
+    "parent": null,
+    "children": [
+      "XHzNngaH5WTtoWaM"
+    ],
+    "data": {},
+    "contentHash": "21e66407bef8c6a5beb80d129cd6453b",
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. \n"
+  },
+  "vaults": [
+    {
+      "fsPath": "vault"
+    }
+  ]
+}
