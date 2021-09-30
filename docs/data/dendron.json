@@ -40,7 +40,7 @@
   "site": {
     "copyAssets": true,
     "siteHierarchies": [
-      "root"
+      "travel.pictures"
     ],
     "siteRootDir": "docs",
     "siteUrl": "https://harshita-mindfire.github.io",
@@ -57,7 +57,7 @@
     "gh_root": "docs/",
     "gh_edit_view_mode": "edit",
     "writeStubs": true,
-    "siteIndex": "root"
+    "siteIndex": "travel.pictures"
   },
   "initializeRemoteVaults": true,
   "seeds": {

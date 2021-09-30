@@ -1,0 +1,188 @@
+<h1 id="github-graphql-api"><a aria-hidden="true" class="anchor-heading" href="#github-graphql-api"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>GitHub Graphql API</h1>
+<p>In my initial days, I had a hard time figuring out these queries while I was working on a task. I had used <a href="https://www.npmjs.com/package/@octokit/graphql">octokit</a> for making the request.</p>
+<p><em>Graphql queries</em></p>
+<ul>
+<li>Total issue count:</li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql"><span class="token keyword">query</span> <span class="token punctuation">{</span> 
+  <span class="token property-query">repository</span><span class="token punctuation">(</span><span class="token attr-name">owner</span><span class="token punctuation">:</span><span class="token string">"dendronhq"</span><span class="token punctuation">,</span> <span class="token attr-name">name</span><span class="token punctuation">:</span><span class="token string">"dendron"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token object">issues</span> <span class="token punctuation">{</span>
+      <span class="token property">totalCount</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Open and closed issue count</li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql"><span class="token keyword">query</span> <span class="token punctuation">{</span> 
+  <span class="token property-query">repository</span><span class="token punctuation">(</span><span class="token attr-name">owner</span><span class="token punctuation">:</span><span class="token string">"dendronhq"</span><span class="token punctuation">,</span> <span class="token attr-name">name</span><span class="token punctuation">:</span><span class="token string">"dendron"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token attr-name">open</span><span class="token punctuation">:</span> <span class="token property-query">issues</span><span class="token punctuation">(</span><span class="token attr-name">states</span><span class="token punctuation">:</span><span class="token constant">OPEN</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token property">totalCount</span>
+    <span class="token punctuation">}</span>
+    <span class="token attr-name">closed</span><span class="token punctuation">:</span> <span class="token property-query">issues</span><span class="token punctuation">(</span><span class="token attr-name">states</span><span class="token punctuation">:</span><span class="token constant">CLOSED</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token property">totalCount</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Result </p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"data"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"repository"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"open"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"totalCount"</span><span class="token operator">:</span> <span class="token number">271</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"closed"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"totalCount"</span><span class="token operator">:</span> <span class="token number">448</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>quering repository</li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql">
+<span class="token keyword">query</span> <span class="token punctuation">{</span> 
+  <span class="token property-query">repository</span><span class="token punctuation">(</span><span class="token attr-name">owner</span><span class="token punctuation">:</span><span class="token string">"dendronhq"</span><span class="token punctuation">,</span> <span class="token attr-name">name</span><span class="token punctuation">:</span><span class="token string">"dendron"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token property-query">issues</span><span class="token punctuation">(</span><span class="token attr-name">last</span><span class="token punctuation">:</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token attr-name">states</span><span class="token punctuation">:</span><span class="token constant">OPEN</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token object">edges</span> <span class="token punctuation">{</span>
+        <span class="token object">node</span> <span class="token punctuation">{</span>
+          <span class="token property">title</span>
+          <span class="token property">url</span>
+          <span class="token property">number</span>
+          <span class="token property">state</span>
+          <span class="token property-query">labels</span><span class="token punctuation">(</span><span class="token attr-name">first</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token object">edges</span> <span class="token punctuation">{</span>
+              <span class="token object">node</span> <span class="token punctuation">{</span>
+                <span class="token property">name</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+          <span class="token property">body</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>search query let you search between a datetime</li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql"><span class="token punctuation">{</span>
+  <span class="token property-query">search</span><span class="token punctuation">(</span><span class="token attr-name">query</span><span class="token punctuation">:</span> <span class="token string">"repo:dendronhq/dendron is:issue is:open created:2021-06-28..2021-06-30"</span><span class="token punctuation">,</span> <span class="token attr-name">type</span><span class="token punctuation">:</span> <span class="token constant">ISSUE</span><span class="token punctuation">,</span> <span class="token attr-name">last</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token object">edges</span> <span class="token punctuation">{</span>
+      <span class="token object">node</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span> <span class="token keyword">on</span> <span class="token class-name">Issue</span> <span class="token punctuation">{</span>
+        <span class="token property">title</span>
+          <span class="token property">url</span>
+          <span class="token property">createdAt</span>
+          <span class="token property">number</span>
+          <span class="token property">state</span>
+         
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>search query to get issue count</li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql"><span class="token punctuation">{</span>
+  <span class="token property-query">search</span><span class="token punctuation">(</span><span class="token attr-name">query</span><span class="token punctuation">:</span> <span class="token string">"repo:dendronhq/dendron is:issue is:open created:2021-06-28..2021-06-30"</span><span class="token punctuation">,</span> <span class="token attr-name">type</span><span class="token punctuation">:</span> <span class="token constant">ISSUE</span><span class="token punctuation">,</span> <span class="token attr-name">last</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token property">issueCount</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="cursor-and-pagination"><a aria-hidden="true" class="anchor-heading" href="#cursor-and-pagination"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Cursor and pagination</h2>
+<pre class="language-graphql"><code class="language-graphql"> <span class="token punctuation">{</span>
+  <span class="token property-query">search</span><span class="token punctuation">(</span><span class="token attr-name">query</span><span class="token punctuation">:</span> <span class="token string">"repo:dendronhq/dendron is:issue is:open created:2021-06-28..2021-06-30"</span><span class="token punctuation">,</span> <span class="token attr-name">type</span><span class="token punctuation">:</span> <span class="token constant">ISSUE</span><span class="token punctuation">,</span> <span class="token attr-name">first</span><span class="token punctuation">:</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token attr-name">after</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token property">end_cursor_val</span><span class="token punctuation">]</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token object">pageInfo</span> <span class="token punctuation">{</span>
+      <span class="token property">startCursor</span>
+      <span class="token property">hasNextPage</span>
+      <span class="token property">endCursor</span>
+    <span class="token punctuation">}</span>
+    <span class="token object">edges</span> <span class="token punctuation">{</span>
+      <span class="token property">cursor</span>
+      <span class="token object">node</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span> <span class="token keyword">on</span> <span class="token class-name">Issue</span> <span class="token punctuation">{</span>
+        <span class="token property">title</span>
+          <span class="token property">url</span>
+          <span class="token property">createdAt</span>
+          <span class="token property">number</span>
+          <span class="token property">state</span>
+         
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="mutation"><a aria-hidden="true" class="anchor-heading" href="#mutation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Mutation</h2>
+<ul>
+<li>Query all the labels of dendron:</li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql"><span class="token keyword">query</span> <span class="token punctuation">{</span> 
+  <span class="token property-query">repository</span><span class="token punctuation">(</span><span class="token attr-name">owner</span><span class="token punctuation">:</span><span class="token string">"dendronhq"</span><span class="token punctuation">,</span> <span class="token attr-name">name</span><span class="token punctuation">:</span><span class="token string">"dendron"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token property-query">labels</span><span class="token punctuation">(</span><span class="token attr-name">last</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token object">edges</span><span class="token punctuation">{</span>
+        <span class="token object">node</span> <span class="token punctuation">{</span>
+          <span class="token property">id</span>
+          <span class="token property">name</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>to update state of an issue</li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql"><span class="token keyword">mutation</span><span class="token punctuation">{</span>
+  <span class="token property-query property-mutation">updateIssue</span><span class="token punctuation">(</span><span class="token attr-name">input</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token attr-name">id</span> <span class="token punctuation">:</span> <span class="token string">"MDU6SXNzdWU5NTI4MjU3NzY="</span> <span class="token punctuation">,</span> <span class="token attr-name">state</span><span class="token punctuation">:</span> <span class="token constant">OPEN</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token object">issue</span> <span class="token punctuation">{</span>
+          <span class="token property">number</span>
+        <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>with label ids:</li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql"><span class="token keyword">mutation</span><span class="token punctuation">{</span>
+  <span class="token property-query property-mutation">updateIssue</span><span class="token punctuation">(</span><span class="token attr-name">input</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token attr-name">id</span> <span class="token punctuation">:</span> <span class="token string">"MDU6SXNzdWU5NTI4MjU3NzY="</span> <span class="token punctuation">,</span> <span class="token attr-name">state</span><span class="token punctuation">:</span> <span class="token constant">OPEN</span><span class="token punctuation">,</span> <span class="token attr-name">labelIds</span><span class="token punctuation">:</span> <span class="token string">"MDU6TGFiZWwzMDg4MjQzMDM3"</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token object">issue</span> <span class="token punctuation">{</span>
+          <span class="token property">number</span><span class="token punctuation">,</span>
+      <span class="token property-query">labels</span><span class="token punctuation">(</span><span class="token attr-name">first</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+        <span class="token object">edges</span> <span class="token punctuation">{</span>
+        <span class="token object">node</span> <span class="token punctuation">{</span>
+          <span class="token property">id</span>
+          <span class="token property">name</span>
+        <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>updating multiple labels : </li>
+</ul>
+<pre class="language-graphql"><code class="language-graphql"><span class="token keyword">mutation</span><span class="token punctuation">{</span>
+  <span class="token property-query property-mutation">updateIssue</span><span class="token punctuation">(</span><span class="token attr-name">input</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token attr-name">id</span> <span class="token punctuation">:</span> <span class="token string">"MDU6SXNzdWU5NTI4ODE2Nzc"</span> <span class="token punctuation">,</span> <span class="token attr-name">state</span><span class="token punctuation">:</span> <span class="token constant">CLOSED</span><span class="token punctuation">,</span> <span class="token attr-name">labelIds</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"MDU6TGFiZWwzMjAxNTExMTMw"</span><span class="token punctuation">,</span> <span class="token string">"MDU6TGFiZWwxOTY1MzE3NzI1"</span><span class="token punctuation">,</span> <span class="token string">"MDU6TGFiZWwxOTY1MzE3NzI0"</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token object">issue</span> <span class="token punctuation">{</span>
+          <span class="token property">number</span><span class="token punctuation">,</span>
+      <span class="token property-query">labels</span><span class="token punctuation">(</span><span class="token attr-name">first</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+        <span class="token object">edges</span> <span class="token punctuation">{</span>
+        <span class="token object">node</span> <span class="token punctuation">{</span>
+          <span class="token property">id</span>
+          <span class="token property">name</span>
+        <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
