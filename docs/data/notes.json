@@ -11,11 +11,10 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1633031844488,
-      "created": 1633031844488,
+      "updated": 1633932101739,
+      "created": 1633932101739,
       "parent": null,
       "children": [],
-      "body": "[Dendron](https://dendron.so/) (the tool used to generate this site) lets authors selective publish content. You will see this page whenever you click on a link to an unpublished page\n\n![](https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/not-sprouted.png)",
       "data": {}
     },
     "Diy1ofRKvV4KpKqXDag8k": {
@@ -42,7 +41,7 @@
         }
       },
       "fname": "travel.pictures",
-      "updated": 1633030744920,
+      "updated": 1633930889004,
       "created": 1633028605011,
       "parent": null,
       "children": [
@@ -51,12 +50,11 @@
         "7W6e3dRjmE8Ue47OnYHHr"
       ],
       "data": {},
-      "contentHash": "eda307f990338f2564696eafabfdb11e",
+      "contentHash": "c680eef0ca435304bd7a450da28f1242",
       "custom": {
         "nav_order": 0,
         "permalink": "/"
-      },
-      "body": "## Postcards\n\n### Nainital\n\nStarting from my hometown: Nainital, Uttarakhand\n\n![Nainital Lake](/assets/images/2021-10-01-00-55-47.png)\n\n![Home](/assets/images/2021-10-01-01-08-50.png)\n\n![Old Letter Box](/assets/images/2021-10-01-00-52-26.png)\n\n- _Dated : Dec 2018_\n\n![Leaf](/assets/images/2021-10-01-00-54-16.png)\n\n- _Dated 16 October 2020_\n\n![Diwali Lamps](/assets/images/2021-10-01-01-01-34.png)\n\n- _Dated: 16 June 2020_\n\n![](/assets/images/2021-10-01-01-03-00.png)"
+      }
     },
     "7W6e3dRjmE8Ue47OnYHHr": {
       "id": "7W6e3dRjmE8Ue47OnYHHr",
@@ -73,17 +71,22 @@
           "value": "jaipur",
           "line": 8,
           "column": 0
+        },
+        "hawa-mahal": {
+          "type": "header",
+          "value": "hawa-mahal",
+          "line": 20,
+          "column": 0
         }
       },
       "fname": "travel.pictures.jaipur",
-      "updated": 1633030551278,
+      "updated": 1633930937816,
       "created": 1633029059401,
       "parent": "Diy1ofRKvV4KpKqXDag8k",
       "children": [],
       "data": {},
-      "contentHash": "835e75800f3194ddd967d9caa62c447f",
-      "custom": {},
-      "body": "\n## Jaipur\nJaipur is the capital and the largest city of the Indian state of Rajasthan. \n\n__Date : 22 Feb 2019__\n\nPlaces visited: \n- Hawa Mahal\n- Amer Fort\n- Jal Mahal\n- Jantar Mantar\n\n\n\n![Hawa Mahal](/assets/images/2021-10-01-00-41-29.png)\n\n\n![Door inside Jantar Mantar](/assets/images/2021-10-01-00-42-11.png)\n\n![Hawa mahal door](/assets/images/2021-10-01-01-05-30.png)\n"
+      "contentHash": "2a0f7fca7fb65eba3272a4713fd44de7",
+      "custom": {}
     },
     "QyN8xtFxIQCmWSqGm7a0J": {
       "id": "QyN8xtFxIQCmWSqGm7a0J",
@@ -103,14 +106,13 @@
         }
       },
       "fname": "travel.pictures.delhi-noida",
-      "updated": 1633030796835,
+      "updated": 1633930963267,
       "created": 1633029502845,
       "parent": "Diy1ofRKvV4KpKqXDag8k",
       "children": [],
       "data": {},
-      "contentHash": "23c36dde3722d6d80f3db7f8e0f451d6",
-      "custom": {},
-      "body": "\n## Delhi\n\n- _Dated:  21 October 2019_\n\n![Lantern](/assets/images/2021-10-01-00-48-40.png)\n\n- _Dated : 10 Dec 2019_\n\n![Fountain](/assets/images/2021-10-01-00-51-29.png)\n\n- Lost the original copy, had this wallpaper saved from ages\n\n![Rabbit](/assets/images/2021-10-01-00-57-35.png)\n\n\n- _Dated: 1 March 2020_\n\n![Naturals cafe](/assets/images/2021-10-01-01-09-28.png)\n"
+      "contentHash": "33b3dd3fe4ec5d1c2354735a911b0135",
+      "custom": {}
     },
     "zZfXeVc7hxRQld0cBQr9S": {
       "id": "zZfXeVc7hxRQld0cBQr9S",
@@ -130,14 +132,13 @@
         }
       },
       "fname": "travel.pictures.agra",
-      "updated": 1633030853683,
+      "updated": 1633931031373,
       "created": 1633028738049,
       "parent": "Diy1ofRKvV4KpKqXDag8k",
       "children": [],
       "data": {},
-      "contentHash": "46213c060c384769235e7d894f5b2898",
-      "custom": {},
-      "body": "\n## Agra\n\n\nShort trip\n- Agra Fort\n- Taj Mahal\n\n![Agra Fort](/assets/images/2021-10-01-00-37-50.png)\n\n![Inside Agra Fort](/assets/images/2021-10-01-00-38-28.png)\n\n![Dewaan-e-khas](/assets/images/2021-10-01-00-38-55.png)\n\n\n![](/assets/images/2021-10-01-00-40-33.png)\n\n![Taj Mahal](/assets/images/2021-10-01-01-10-38.png)\n\n![](/assets/images/2021-10-01-00-36-37.png)"
+      "contentHash": "ef8ac14bff6b1ce3ca78a20df5480e4b",
+      "custom": {}
     },
     "changelog": {
       "id": "changelog",
@@ -150,11 +151,10 @@
       "links": [],
       "anchors": {},
       "fname": "root.changelog",
-      "updated": 1633031844489,
-      "created": 1633031844489,
+      "updated": 1633932101739,
+      "created": 1633932101739,
       "parent": null,
       "children": [],
-      "body": "",
       "data": {}
     }
   },
@@ -183,7 +183,7 @@
         }
       },
       "fname": "travel.pictures",
-      "updated": 1633030744920,
+      "updated": 1633930889004,
       "created": 1633028605011,
       "parent": null,
       "children": [
@@ -192,12 +192,12 @@
         "7W6e3dRjmE8Ue47OnYHHr"
       ],
       "data": {},
-      "contentHash": "eda307f990338f2564696eafabfdb11e",
+      "contentHash": "c680eef0ca435304bd7a450da28f1242",
       "custom": {
         "nav_order": 0,
         "permalink": "/"
       },
-      "body": "## Postcards\n\n### Nainital\n\nStarting from my hometown: Nainital, Uttarakhand\n\n![Nainital Lake](/assets/images/2021-10-01-00-55-47.png)\n\n![Home](/assets/images/2021-10-01-01-08-50.png)\n\n![Old Letter Box](/assets/images/2021-10-01-00-52-26.png)\n\n- _Dated : Dec 2018_\n\n![Leaf](/assets/images/2021-10-01-00-54-16.png)\n\n- _Dated 16 October 2020_\n\n![Diwali Lamps](/assets/images/2021-10-01-01-01-34.png)\n\n- _Dated: 16 June 2020_\n\n![](/assets/images/2021-10-01-01-03-00.png)"
+      "body": "## Postcards\n\n### Nainital\n\nStarting from my hometown: Nainital, Uttarakhand\n\n![Nainital Lake](/assets/images/2021-10-01-00-55-47.png){max-width: 300px, display: block, margin: 0 auto}\n\n![Home](/assets/images/2021-10-01-01-08-50.png){max-width: 300px, display: block, margin: 0 auto}\n\n![Old Letter Box](/assets/images/2021-10-01-00-52-26.png){max-width: 300px, display: block, margin: 0 auto}\n\n- _Dated : Dec 2018_\n\n![Leaf](/assets/images/2021-10-01-00-54-16.png){max-width: 300px, display: block, margin: 0 auto}\n\n- _Dated 16 October 2020_\n\n![Diwali Lamps](/assets/images/2021-10-01-01-01-34.png){max-width: 300px, display: block, margin: 0 auto}\n\n- _Dated: 16 June 2020_\n\n![](/assets/images/2021-10-01-01-03-00.png){max-width: 300px, display: block, margin: 0 auto}"
     }
   ],
   "noteIndex": {
@@ -224,7 +224,7 @@
       }
     },
     "fname": "travel.pictures",
-    "updated": 1633030744920,
+    "updated": 1633930889004,
     "created": 1633028605011,
     "parent": null,
     "children": [
@@ -233,12 +233,12 @@
       "7W6e3dRjmE8Ue47OnYHHr"
     ],
     "data": {},
-    "contentHash": "eda307f990338f2564696eafabfdb11e",
+    "contentHash": "c680eef0ca435304bd7a450da28f1242",
     "custom": {
       "nav_order": 0,
       "permalink": "/"
     },
-    "body": "## Postcards\n\n### Nainital\n\nStarting from my hometown: Nainital, Uttarakhand\n\n![Nainital Lake](/assets/images/2021-10-01-00-55-47.png)\n\n![Home](/assets/images/2021-10-01-01-08-50.png)\n\n![Old Letter Box](/assets/images/2021-10-01-00-52-26.png)\n\n- _Dated : Dec 2018_\n\n![Leaf](/assets/images/2021-10-01-00-54-16.png)\n\n- _Dated 16 October 2020_\n\n![Diwali Lamps](/assets/images/2021-10-01-01-01-34.png)\n\n- _Dated: 16 June 2020_\n\n![](/assets/images/2021-10-01-01-03-00.png)"
+    "body": "## Postcards\n\n### Nainital\n\nStarting from my hometown: Nainital, Uttarakhand\n\n![Nainital Lake](/assets/images/2021-10-01-00-55-47.png){max-width: 300px, display: block, margin: 0 auto}\n\n![Home](/assets/images/2021-10-01-01-08-50.png){max-width: 300px, display: block, margin: 0 auto}\n\n![Old Letter Box](/assets/images/2021-10-01-00-52-26.png){max-width: 300px, display: block, margin: 0 auto}\n\n- _Dated : Dec 2018_\n\n![Leaf](/assets/images/2021-10-01-00-54-16.png){max-width: 300px, display: block, margin: 0 auto}\n\n- _Dated 16 October 2020_\n\n![Diwali Lamps](/assets/images/2021-10-01-01-01-34.png){max-width: 300px, display: block, margin: 0 auto}\n\n- _Dated: 16 June 2020_\n\n![](/assets/images/2021-10-01-01-03-00.png){max-width: 300px, display: block, margin: 0 auto}"
   },
   "vaults": [
     {

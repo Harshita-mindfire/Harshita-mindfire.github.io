@@ -1,10 +1,3 @@
----
-id: Diy1ofRKvV4KpKqXDag8k
-title: Pictures
-desc: ''
-updated: 1633930889004
-created: 1633028605011
----
 ## Postcards
 
 ### Nainital

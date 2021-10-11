@@ -36,8 +36,8 @@ site:
     siteRootDir: docs
     siteUrl: 'https://harshita-mindfire.github.io'
     usePrettyRefs: true
-    title: Dendron
-    description: Personal knowledge space
+    title: Postcards
+    description: Joshi's Personal knowledge space
 initializeRemoteVaults: true
 seeds:
     dendron.templates: {}

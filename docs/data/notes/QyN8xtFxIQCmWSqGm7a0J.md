@@ -1,10 +1,3 @@
----
-id: QyN8xtFxIQCmWSqGm7a0J
-title: Delhi Noida
-desc: ''
-updated: 1633930963267
-created: 1633029502845
----
 
 ## Delhi
 

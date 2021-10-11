@@ -1,10 +1,3 @@
----
-id: 7W6e3dRjmE8Ue47OnYHHr
-title: Jaipur
-desc: ''
-updated: 1633930937816
-created: 1633029059401
----
 
 ## Jaipur
 Jaipur is the capital and the largest city of the Indian state of Rajasthan. 
